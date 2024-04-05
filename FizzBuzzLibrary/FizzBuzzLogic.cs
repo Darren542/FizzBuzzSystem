@@ -7,8 +7,8 @@ public class FizzBuzzLogic
       if (number == null) {
             throw new Exception("Number must not be null.");
       }
-      if (number < 1 || number > 100) {
-            throw new Exception("Number must be greater than 0 and less than or equal to 100.");
+      if (number < 0 || number > 100) {
+            throw new Exception("Number must be greater than or equal to 0 and less than or equal to 100.");
       }
       string result = string.Empty;
       for (int i = 1; i <= number; i++) {
